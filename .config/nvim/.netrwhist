@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/xyz/Documents/github/tech/vim'
+let g:netrw_dirhist_7='/home/xyz/Documents'
+let g:netrw_dirhist_6='/home/xyz'
+let g:netrw_dirhist_5='/home/xyz/Dropbox'
+let g:netrw_dirhist_4='/home/xyz/Dropbox/Archive'
+let g:netrw_dirhist_3='/home/xyz/Dropbox/Archive/vim'
+let g:netrw_dirhist_2='/home/xyz/Documents/github/tech/i3'
+let g:netrw_dirhist_1='/home/xyz/Documents/github'
+let g:netrw_dirhist_0='/home/xyz/Documents'
+let g:netrw_dirhist_9='/home/xyz/Documents/github'

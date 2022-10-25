@@ -1,0 +1,10 @@
+timesheet https://doffice.dataon.com/sf6/index.cfm?xfid=cli.attendance.timesheet.timesheet&lreqts=1602583165007
+tsreport http://support.dataon.com/imppor/reporttimesheet.cfm
+imppor http://support.dataon.com/imppor/
+insys http://support.dataon.com/insys/index.cfm?mode=home
+doffice https://doffice.dataon.com/sf6/index.cfm
+bank mantap sf6 public http://103.79.96.2:8000/sf6/
+sfsupport https://sfsupport.dataon.com/app/ticket/forms
+greatday https://legacy.greatdayhr.com/#/home2
+sf7demo https://sf7demo.dataon.com/auth
+sf7doffice https://sf7doffice.dataon.com/auth

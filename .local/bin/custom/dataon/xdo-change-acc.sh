@@ -1,0 +1,7 @@
+#!/bin/bash
+# back to username 
+sleep 1; xdotool key shift+0xff09 shift+0xff09 type gordon; 
+xdotool key 0xff09 type password123
+xdotool key 0xff09 type dataon1_demo;
+xdotool key enter;
+#0xff09 0xff09 0xff09 0xff09 0xff09 0xff09 0xff09 0xff09 0xff09 

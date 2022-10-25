@@ -1,0 +1,28 @@
+#!/usr/bin/python
+from selenium import webdriver
+#from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome()
+driver.implicitly_wait(30)
+
+driver.get('https://sf7doffice.dataon.com/standard/hrm.time-and-attendance.attendance-request.timesheet-request')
+#driver.get('https://sf7demo.dataon.com/')
+
+userinput = driver.find_element("xpath",'//input[@id="login_USERNAME"]')
+userinput.send_keys('marctinius')
+
+userinput = driver.find_element("xpath",'//input[@id="login_USERPWD"]')
+userinput.send_keys('6.Spejize')
+
+userinput = driver.find_element("xpath",'//button[@type="submit"]')
+userinput.click()
+
+driver.find_element("xpath",'//button[@class="ant-btn ant-btn-primary"]').click()
+#hoverable = driver.find_element("xpath",'//aside//span[@aria-label="clock-circle"]')
+#ActionChains(driver).move_to_element(hoverable).perform()
+
+#userinput = driver.find_element("xpath",'a[@href="/standard/hrm.time-and-attendance.attendance-request.timesheet-request"]')
+#userinput.click()
+
+driver.quit()

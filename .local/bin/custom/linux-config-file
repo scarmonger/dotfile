@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# define text editor used
+DMEDITOR="st -e nvim"
+
+
+# create an array
+declare -a options=(
+"x - $HOME/.xinitrc"
+"pi - $HOME/.config/picom.conf"
+"mirrorlist - /etc/pacman.d/mirrorlist"
+"hosts - /etc/hosts"
+"alias - $HOME/.bash_aliases"
+"profile - $HOME/.bash_profile"
+"bashrc - $HOME/.bashrc"
+"v - $HOME/.config/nvim/init.vim"
+"vs - $HOME/Dropbox/linux/dotfiles/.config/nvim/shortcut.vim"
+"q - $HOME/.config/qutebrowser/config.py"
+"qm - $HOME/.config/qutebrowser/quickmarks"
+"qb - $HOME/.config/qutebrowser/bookmarks/urls"
+"r - $HOME/.config/ranger/rc.conf"
+"rr - $HOME/.config/ranger/rifle.conf"
+"rs - $HOME/.config/ranger/scope.sh"
+"af - $HOME/Dropbox/notes/tech/linux/arch/after-install-arch.md"
+"dwm - $HOME/Downloads/suckless/dwm/config.def.h"
+"st - $HOME/Downloads/suckless/st/config.def.h"
+"dmenu - $HOME/Downloads/suckless/dmenu/config.def.h"
+"conf - $HOME/.local/bin/custom/dm-config-file"
+)
+
+# piping the above array into dmenu
+# we use "printf '%s\n'" to format the array one item to a line
+choice=$(printf '%s\n' "${options[@]}" | dmenu -i -l 20 -p 'Edit Config:')
+
+if [[ "$choice" ]]; then
+	 cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
+	 $DMEDITOR "$cfg"
+else
+	 echo "Program terminated." && exit 1
+fi
