@@ -123,8 +123,8 @@ alias -s gz="tar -tf"
 alias -s {tgz,TGZ}="tar -tf"
 alias -s {tar.gz}="tar -xvf"
 
-# misc
-gcom(){
+# git
+gmm(){
 	git add .
 	git commit -m "$1"
 }
@@ -135,8 +135,25 @@ gpush(){
 	git push
 }
 
-# edit files
-alias eho="sudo nvim /etc/hosts"
+alias gs="git status"
+alias ga="git add ."
+alias gb="git branch"
+alias gbd="git branch -d" # delete branch
+alias gc="git clone"
+alias gcl="git clean -fdx"
+alias gl="git log --oneoline"
+alias gcom="git checkout master"
+alias gr="git reset"
+alias gco="git checkout"
+
+alias ghd="cd ~/github/dotfile"
+alias ghw="cd ~/github/suckless/dwm"
+alias ghm="cd ~/github/suckless/dmenu"
+alias ghs="cd ~/github/suckless/st"
+
+# mouse
+alias rtl='xmodmap -e "pointer = 1 2 3"'
+alias ltr='xmodmap -e "pointer = 3 2 1"'
 
 # change mouse click left to right
 # xmodmap -e "pointer = 1 2 3" &
@@ -145,12 +162,17 @@ xmodmap -e "pointer = 3 2 1"
 xset r rate 300 50
 # Change Capslock to ESC
 setxkbmap -option caps:escape
-wmname LG3D 
 
+# init window name for project libre
+alias wm="wmname LG3D"
+
+alias h='history | dmenu -i -l 20 -p "history" | xclip -sel c'
 alias df="df -h -x squashfs -x tmpfs -x devtmpfs"
 alias lsmount="mount | column -t"
 alias extip="curl icanhazip.com"
 
+alias jabra='bluetoothctl power on; bluetoothctl connect 50:C9:71:5A:23:90'
+alias jbl='bluetoothctl power on; bluetoothctl connect F4:BC:DA:A4:37:A5'
 # alias bi="sudo apt --fix-broken install"
 # alias di="sudo dpkg -i"
 # alias i="sudo apt install"
@@ -159,7 +181,6 @@ alias qs="sudo pacman -Qs | grep"
 alias ui="sudo pacman -Rs"
 alias i="sudo pacman --noconfirm -S"
 alias mk="makepkg -si"
-alias gc="git clone"
 alias mks="rm config.h && sudo make clean install"
 
 # top 5 processes that using most memory
@@ -172,7 +193,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias so="source ~/.bashrc"
+alias so="source ~/.zshrc"
 alias sox="source ~/.xinitrc"
 alias v='nvim'
 alias vim='nvim'
@@ -222,14 +243,6 @@ alias n="cd ~/Dropbox/notes"
 alias myp="cd ~/Dropbox/My\ Project"
 alias dc="/home/mc/Dropbox/linux/dotfiles/.local/bin/custom"
 
-# git
-alias gs="git status"
-alias gasa="cd ~/Documents/github/dotfiles/ && git add . && git commit -m 'add' && git push"
-alias gass="cd ~/Documents/github/dataon/ && git add . && git commit -m 'add' && git push"
-alias gasd="cd ~/Documents/github/tech/ && git add . && git commit -m 'add' && git push"
-alias gasf="cd ~/Documents/github/personal/ && git add . && git commit -m 'add' && git push"
-alias pushall="cd ~/Documents/github/dotfiles/ && git add . && git commit -m 'add' && git push cd ~/Documents/github/dataon/ && git add . && git commit -m 'add' && git push && cd ~/Documents/github/tech/ && git add . && git commit -m 'add' && git push && cd ~/Documents/github/personal/ && git add . && git commit -m 'add' && git push"
-alias pullall="cd ~/Documents/github/dotfiles/ && git pull && cd ~/Documents/github/dataon/ && git pull && cd ~/Documents/github/tech/ && git pull && cd ~/Documents/github/personal/ && git pull"
 
 
 alias gp="cd ~/Documents/ && yt-dlp -f '\''bestaudio'\'' "
@@ -316,19 +329,19 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-gitpush() {
-    git add .
-    git commit -m "$*"
-    git pull
-    git push
-}
-gitupdate() {
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/github
-    ssh -T git@github.com
-}
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
+# Battery
+alias bat='sudo tlp-stat -b'
+alias bat100='sudo tlp fullcharge'
+alias bat30='sudo tlp setcharge 25 30 BAT0'
+
+alias blkid="sudo blkid"
+alias dd='sudo dd if=~/Downloads/file.iso of=/dev/sdc bs=1M status=progress'
+alias umt='sudo umount /dev/sdc1'
+alias scan='clamscan --recursive --infected  --max-filesize=4000M -l ~/scanlog.txt --move=/home/mc/clamav/ /'
+alias rnet='sudo systemctl restart NetworkManager'
+alias syn='rsync -urvP '
 
 # Operating system specific aliases
 if [[ $OSTYPE == darwin* ]]; then

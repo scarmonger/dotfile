@@ -96,9 +96,9 @@ https://github.com/nsxiv/nsxiv
 https://github.com/sarfraznawaz2005/quran-cli
 
 # Applications
-sudo pacman -S firefox chromium qutebrowser 
-sudo pacman -S ranger vlc mpv ncdu pcmanfm thunar xdotool xclip
-sudo pacman -S fuse feh w3m htop trash-cli gvfs tmux ripgrep sshfs 
+sudo pacman -S firefox chromium qutebrowser xclip clipmenu rsync
+sudo pacman -S ranger trash-cli ncdu pcmanfm thunar xdotool vlc mpv 
+sudo pacman -S fuse feh w3m htop gvfs tmux ripgrep sshfs dunst
 > fuse untuk menjalankan file AppImage
 > gvfs untuk menampilkan recycle bin di thunar / pcmanfm
 sudo pacman -S okular bpytop xorg-xev dbeaver wmname veracrypt traceroute
@@ -157,8 +157,6 @@ sudo usermod -aG libvirt mc
 systemctl restart libvirtd.service
 
 start qemu with: virt-manager
-
-
 
 # Sound
 sudo pacman -S alsa-utils
@@ -427,6 +425,7 @@ application/x-bittorrent=deluge.desktop;
 # VPN-PPTP
 sudo pacman -S networkmanager-pptp
 
+Syntax for create VPN DataOn see keepass
 sudo pon <TUNNEL> debug dump logfd 2 nodetach
 sudo pon dataon debug dump logfd 2 nodetach
 sudo pon dataon
