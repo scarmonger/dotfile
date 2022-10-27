@@ -53,7 +53,7 @@ clipmenud &
 #systemctl --user import-environment DISPLAY
 
 # display monitor
-~/.screenlayout/nbc.sh
+#~/.screenlayout/nbc.sh
 
 # Increase Keyboard Speed Button
 xset r rate 300 50 &
