@@ -10,8 +10,9 @@ git clone https://github.com/scarmonger/suckless.git
 git clone https://github.com/scarmonger/dotfile.git
 
 ln -ivs ~/github/dotfile/.xinitrc ~/.xinitrc
-ln -ivs ~/github/dotfile/.bash_profile ~/.bash_profile
-ln -ivs ~/github/dotfile/.bashrc ~/.bashrc
+# ln -ivs ~/github/dotfile/.bash_profile ~/.bash_profile
+# ln -ivs ~/github/dotfile/.bashrc ~/.bashrc
+# ln -ivs ~/github/dotfile/.bash_aliases ~/.bash_aliases
 
 # Download file .AppImage for ksnip and obsidian
 https://github.com/ksnip/ksnip/releases
@@ -58,11 +59,13 @@ ln -ivs ~/github/dotfile/.local/bin/statusbar ~/.local/bin
 ln -ivs ~/github/dotfile/.local/bin/custom ~/.local/bin
 
 # home folder
-ln -s ~/github/dotfile/.gnupg/ ~/.gnupg
-ln -s ~/github/dotfile/.password-store/ ~/.password-store
+# ln -s ~/github/dotfile/.gnupg/ ~/.gnupg
+# ln -s ~/github/dotfile/.password-store/ ~/.password-store
 ln -s ~/github/dotfile/.zshrc ~/.zshrc
 ln -s ~/github/dotfile/.zprofile ~/.zprofile
+mv ~/.oh-my-zsh/custom ~/.oh-my-zsh/custom_archived
 ln -s ~/github/dotfile/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+ln -s ~/github/dotfile/.config/mimeapps.list ~/.config/mimeapps.list
 
 
 # Usefull Command:
@@ -97,7 +100,7 @@ https://github.com/sarfraznawaz2005/quran-cli
 
 # Applications
 sudo pacman -S firefox chromium qutebrowser xclip clipmenu rsync
-sudo pacman -S ranger trash-cli ncdu pcmanfm thunar xdotool vlc mpv 
+sudo pacman -S ranger trash-cli ncdu pcmanfm thunar xdotool vlc mpv file-roller
 sudo pacman -S fuse feh w3m htop gvfs tmux ripgrep sshfs dunst
 > fuse untuk menjalankan file AppImage
 > gvfs untuk menampilkan recycle bin di thunar / pcmanfm
@@ -121,6 +124,7 @@ sudo pacman -S imagemagick
 # Install python,pip & selenium
 sudo pacman -S python python-pip
 pip install selenium
+pip install pyperclip
 
 # GitHub authentication
 https://cli.github.com/manual/

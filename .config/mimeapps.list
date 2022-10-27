@@ -1,0 +1,25 @@
+[Default Applications]
+text/html=wps-office-et.desktop
+x-scheme-handler/http=qutebrowser.desktop
+x-scheme-handler/https=qutebrowser.desktop
+x-scheme-handler/about=qutebrowser.desktop
+x-scheme-handler/unknown=qutebrowser.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+application/pdf=org.pwmt.zathura.desktop
+image/jpeg=feh.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-VDP4P1.desktop
+message/rfc822=userapp-Thunderbird-VDP4P1.desktop
+x-scheme-handler/mid=userapp-Thunderbird-VDP4P1.desktop
+application/x-perl=projectlibre.desktop
+x-scheme-handler/postman=Postman.desktop
+
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+text/markdown=visual-studio-code.desktop;
+image/jpeg=feh.desktop;
+text/plain=visual-studio-code.desktop;nvim.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-VDP4P1.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-VDP4P1.desktop;
+application/x-perl=projectlibre.desktop;
+application/wps-office.xls=7zFM.desktop;
+application/x-shellscript=visual-studio-code.desktop;
