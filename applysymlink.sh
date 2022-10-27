@@ -52,6 +52,7 @@ ln -ivs ~/github/dotfile/.config/fish ~/.config/
 ln -ivs ~/github/dotfile/.config/picom.conf ~/.config/
 ln -ivs ~/github/dotfile/.config/ksnip ~/.config/
 ln -ivs ~/github/dotfile/.config/castero ~/.config/
+ln -ivs ~/github/dotfile/.config/dunst ~/.config/
 ln -ivs ~/github/dotfile/.config/shell ~/.config/
 
 # local bin file

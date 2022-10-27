@@ -166,7 +166,7 @@ setxkbmap -option caps:escape
 # init window name for project libre
 alias wm="wmname LG3D"
 
-alias h='history | dmenu -i -l 20 -p "history" | xclip -sel c'
+alias hist='history | dmenu -i -l 20 -p "history" | xclip -sel c'
 alias df="df -h -x squashfs -x tmpfs -x devtmpfs"
 alias lsmount="mount | column -t"
 alias extip="curl icanhazip.com"
