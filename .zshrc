@@ -209,7 +209,8 @@ alias full="sudo tlp fullcharge"
 alias cal="cal 2022"
 alias cam="ffplay /dev/video0"
 alias rn="sudo systemctl restart NetworkManager"
-
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH=/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
 export PATH=$PATH:$HOME/.local/bin/image
 export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
@@ -316,7 +317,7 @@ alias -g P="2>&1| pygmentize -l pytb"
 
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
-alias fd='find . -type d -name'
+# alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 
 alias h='history'
@@ -355,7 +356,11 @@ fi
 aliasname() {
 	command $firstParam $secondParam
 }
+
 alias own="sudo -R chown mc:mc *"
+alias p1="ping www.gmail.com -s 1000"
+alias p2="ping 192.168.0.1 -s 1000"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

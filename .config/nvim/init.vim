@@ -18,7 +18,7 @@
 " 1.key remap
 
 let mapleader = " "
-let maplocalleader = " "
+let maplocalleader = "\\"
 
 nnoremap ; :
 nnoremap : ;
@@ -145,7 +145,7 @@ nnoremap <leader>wa :cd ~/Dropbox/notes/dataon<cr>:pwd<CR>
 nnoremap <leader>wt :cd ~/Dropbox/notes/tech<cr>:pwd<CR>
 nnoremap <leader>wp :cd ~/Dropbox/notes/personal<cr>:pwd<CR>
 
-nnoremap <leader>p :PlugInstall<cr>
+"nnoremap <leader>p :PlugInstall<cr>
 
 " Remove Highlight"
 nnoremap \ :noh<cr>
@@ -288,8 +288,33 @@ Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'ap/vim-css-color'
 Plug 'wellle/context.vim'
+Plug 'prettier/vim-prettier', {
+	\ 'do': 'yarn install --frozen-lockfile --production',
+	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json',
+	\ 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'dense-analysis/ale'
+
+" Track the engine.
+Plug 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " Initialize plugin system
 call plug#end()
+
 
 " 4.SET
 " BASIC SETUP:
@@ -308,8 +333,8 @@ set vb t_vb=
 set smartindent
 set ic
 set smartcase
-set tabstop=4
-set shiftwidth=4
+set tabstop=3
+set shiftwidth=3
 set softtabstop=0 noexpandtab
 "set nowrap
 set cursorline

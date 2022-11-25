@@ -32,9 +32,10 @@ makepkg -si
 
 # install via yay
 yay wps-office
-yay xournal
+#yay xournal
 yay castero
 yay photocollage
+yay libreoffice-still
 
 # Setup dmenu_run_history
 sudo ln -ivs ~/github/suckless/dmenu_run_history /usr/local/bin/dmenu_run_history
@@ -50,7 +51,7 @@ rm -Rf ~/.config/fish
 ln -ivs ~/github/dotfile/.config/fish ~/.config/
 
 ln -ivs ~/github/dotfile/.config/picom.conf ~/.config/
-ln -ivs ~/github/dotfile/.config/ksnip ~/.config/
+cp -iv ~/github/dotfile/.config/ksnip/ksnip.conf ~/.config/ksnip
 ln -ivs ~/github/dotfile/.config/castero ~/.config/
 ln -ivs ~/github/dotfile/.config/dunst ~/.config/
 ln -ivs ~/github/dotfile/.config/shell ~/.config/
@@ -62,6 +63,10 @@ ln -ivs ~/github/dotfile/.local/bin/custom ~/.local/bin
 # home folder
 # ln -s ~/github/dotfile/.gnupg/ ~/.gnupg
 # ln -s ~/github/dotfile/.password-store/ ~/.password-store
+
+su
+cat /home/mc/github/dotfile/etc_hosts >> /etc/hosts
+
 ln -s ~/github/dotfile/.zshrc ~/.zshrc
 ln -s ~/github/dotfile/.zprofile ~/.zprofile
 mv ~/.oh-my-zsh/custom ~/.oh-my-zsh/custom_archived
@@ -100,7 +105,7 @@ https://github.com/nsxiv/nsxiv
 https://github.com/sarfraznawaz2005/quran-cli
 
 # Applications
-sudo pacman -S firefox chromium qutebrowser xclip clipmenu rsync
+sudo pacman -S firefox chromium qutebrowser xclip clipmenu rsync man
 sudo pacman -S ranger trash-cli ncdu pcmanfm thunar xdotool vlc mpv file-roller
 sudo pacman -S fuse feh w3m htop gvfs tmux ripgrep sshfs dunst
 > fuse untuk menjalankan file AppImage
@@ -111,7 +116,7 @@ sudo pacman -S numlockx gimp galculator moc universal-ctags thunderbird playerct
 sudo pacman -S screenkey obs-studio filezilla conky yt-dlp tlp keepass neofetch lxappearance
 sudo pacman -S pdftk arc-icon-theme fzf findutils mlocate xorg-xinput
 sudo pacman -S virtualbox 
-sudo pacman -S ntfs-3g
+sudo pacman -S ntfs-3g prettier
 sudo pacman -S zathura zathura-cb zathura-djvu android-file-transfer ttf-font-awesome
 >zathura-cb — Comic book support
 >zathura-djvu — DjVu support
@@ -126,6 +131,7 @@ sudo pacman -S imagemagick
 sudo pacman -S python python-pip
 pip install selenium
 pip install pyperclip
+python -m pip install --user --upgrade pynvim
 
 # GitHub authentication
 https://cli.github.com/manual/
@@ -478,12 +484,15 @@ upower --dump
 
 
 # zsh
-https://github.com/wting/autojump.git
 https://github.com/wting/autojump/blob/master/docs/install.md
+git clone https://github.com/wting/autojump.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+
+https://christitus.com/zsh/
 https://zsh.sourceforge.io/Guide/zshguide.html
 https://wiki.archlinux.org/title/zsh
 https://github.com/ChrisTitusTech/zsh/blob/master/aliasrc
-https://christitus.com/zsh/
 https://github.com/sdaschner/dotfiles/blob/master/.aliases
 https://github.com/ohmyzsh/ohmyzsh
 https://www.thorsten-hans.com/5-types-of-zsh-aliases

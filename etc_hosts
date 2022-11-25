@@ -1,9 +1,3 @@
-# Static table lookup for hostnames.
-# See hosts(5) for details.
-
-127.0.0.1	localhost
-::1			localhost
-127.0.0.1	tp13.localdomain	tp13
 # Add this file to your /etc/hosts to block all
 # of the ad sites, porn and general junk on this
 # list, including Google.
