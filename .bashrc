@@ -86,7 +86,10 @@ alias rn="sudo systemctl restart NetworkManager"
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
 export PATH=$PATH:$HOME/.local/bin/image
-export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
+#export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
+export PATH=$PATH:$HOME/.script/sfcode
+export PATH=$PATH:$HOME/.script/database
+export PATH=$PATH:$HOME/.script/otomation
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="qutebrowser"
