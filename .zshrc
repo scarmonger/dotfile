@@ -210,10 +210,14 @@ alias cal="cal 2022"
 alias cam="ffplay /dev/video0"
 alias rn="sudo systemctl restart NetworkManager"
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
-export PATH=/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin:$PATH
+export PATH=$PATH:/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin
 export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
 export PATH=$PATH:$HOME/.local/bin/image
-export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
+export PATH=$PATH:$HOME/.script/sfcode
+export PATH=$PATH:$HOME/.script/database
+export PATH=$PATH:$HOME/.script/otomation
+
+#export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="chromium"

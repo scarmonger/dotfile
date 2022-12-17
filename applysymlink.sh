@@ -37,6 +37,10 @@ yay castero
 yay photocollage
 yay libreoffice-still
 
+# Setup Qutebrowser
+set url.searchengines '{"DEFAULT": "https://duckduckgo.com/?q={}", "aw": "https://wiki.archlinux.org/?search={}", "cf": "https://cfdocs.org/{}", "mdb": "https://mariadb.com/kb/en/+search/?q={}", "sf": "https://sfsupport.dataon.com/app/ticket/forms/{}", "yts": "https://www.youtube.com/results?search_query={}", "yu": "https://yufid.com/result_yufid.html?search={}"}'
+set auto_save.session true
+
 # Setup dmenu_run_history
 sudo ln -ivs ~/github/suckless/dmenu_run_history /usr/local/bin/dmenu_run_history
 
@@ -51,7 +55,7 @@ rm -Rf ~/.config/fish
 ln -ivs ~/github/dotfile/.config/fish ~/.config/
 
 ln -ivs ~/github/dotfile/.config/picom.conf ~/.config/
-cp -iv ~/github/dotfile/.config/ksnip/ksnip.conf ~/.config/ksnip
+cp -iv ~/github/dotfile/.config/ksnip/ksnip.conf ~/.config/ksnip/ksnip.conf
 ln -ivs ~/github/dotfile/.config/castero ~/.config/
 ln -ivs ~/github/dotfile/.config/dunst ~/.config/
 ln -ivs ~/github/dotfile/.config/shell ~/.config/
