@@ -13,6 +13,7 @@ declare -a options=(
 "alias - $HOME/.bash_aliases"
 "profile - $HOME/.bash_profile"
 "bashrc - $HOME/.bashrc"
+"zshrc - $HOME/.zshrc"
 "v - $HOME/.config/nvim/init.vim"
 "vs - $HOME/Dropbox/linux/dotfiles/.config/nvim/shortcut.vim"
 "q - $HOME/.config/qutebrowser/config.py"
@@ -22,9 +23,9 @@ declare -a options=(
 "rr - $HOME/.config/ranger/rifle.conf"
 "rs - $HOME/.config/ranger/scope.sh"
 "af - $HOME/Dropbox/notes/tech/linux/arch/after-install-arch.md"
-"dwm - $HOME/Downloads/suckless/dwm/config.def.h"
-"st - $HOME/Downloads/suckless/st/config.def.h"
-"dmenu - $HOME/Downloads/suckless/dmenu/config.def.h"
+"dwm - $HOME/github/suckless/dwm/config.def.h"
+"st - $HOME/github/suckless/st/config.def.h"
+"dmenu - $HOME/github/suckless/dmenu/config.def.h"
 "conf - $HOME/.local/bin/custom/dm-config-file"
 )
 

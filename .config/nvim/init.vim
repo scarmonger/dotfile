@@ -54,8 +54,8 @@ if has("gui_running")
 else
 	nnoremap <leader>ev :e $MYVIMRC<cr>
 	nnoremap <leader>es :e ~/Dropbox/linux/dotfiles/.config/nvim/shortcut.vim<cr>
-	nnoremap <leader>ed :e ~/Downloads/suckless/dwm/config.def.h<cr>
-	nnoremap <leader>ec :e ~/Downloads/suckless/dwmblocks/config.h<cr>
+	nnoremap <leader>ed :e ~/github/suckless/dwm/config.def.h<cr>
+	nnoremap <leader>ec :e ~/github/suckless/dwmblocks/config.h<cr>
 	nnoremap <leader>ex :e ~/.xinitrc<cr>
 	nnoremap <leader>ez :e ~/.zshrc<cr>
 	nnoremap <leader>er :e ~/.config/ranger/rc.conf<cr>
