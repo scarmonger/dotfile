@@ -55,7 +55,7 @@ zle -N vi-append-clip-selection
 
 bindkey '^K' clear-ls-all
 bindkey '^J' clear-tree-2
-bindkey '^H' clear-tree-3
+#bindkey '^H' clear-tree-3
 bindkey '^T' print-current-date
 bindkey '^[^T' print-unix-timestamp
 

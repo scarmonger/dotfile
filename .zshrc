@@ -146,10 +146,10 @@ alias gcom="git checkout master"
 alias gr="git reset"
 alias gco="git checkout"
 
-alias ghd="cd ~/github/dotfile"
-alias ghw="cd ~/github/suckless/dwm"
-alias ghm="cd ~/github/suckless/dmenu"
-alias ghs="cd ~/github/suckless/st"
+alias hd="cd ~/github/dotfile"
+alias hw="cd ~/github/suckless/dwm"
+alias hm="cd ~/github/suckless/dmenu"
+alias hs="cd ~/github/suckless/st"
 
 # mouse
 alias rtl='xmodmap -e "pointer = 1 2 3"'
