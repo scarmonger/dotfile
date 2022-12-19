@@ -73,8 +73,8 @@ cat /home/mc/github/dotfile/etc_hosts >> /etc/hosts
 
 ln -s ~/github/dotfile/.zshrc ~/.zshrc
 ln -s ~/github/dotfile/.zprofile ~/.zprofile
-mv ~/.oh-my-zsh/custom ~/.oh-my-zsh/custom_archived
-ln -s ~/github/dotfile/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+ln -s ~/github/dotfile/.oh-my-zsh/custom/autocomplete.zsh ~/.oh-my-zsh/custom/autocomplete.zsh
+ln -s ~/github/dotfile/.oh-my-zsh/custom/shortcuts.zsh ~/.oh-my-zsh/custom/shortcuts.zsh
 ln -s ~/github/dotfile/.config/mimeapps.list ~/.config/mimeapps.list
 
 
