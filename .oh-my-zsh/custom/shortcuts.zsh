@@ -12,7 +12,7 @@
 # clears the shell and displays the current dir
 clear-ls-all() {
     clear
-    ls -al
+    ls -al --group-directories-first
 }
 zle -N clear-ls-all
 
