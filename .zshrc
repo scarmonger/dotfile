@@ -8,6 +8,21 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH=$PATH:/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
+export PATH=$PATH:$HOME/.local/bin/image
+# export PATH=$PATH:$HOME/.script/sfcode
+# export PATH=$PATH:$HOME/.script/database
+# export PATH=$PATH:$HOME/.script/otomation
+
+# export PATH=$PATH:$PATH$( find $HOME/.local/bin/custom/ -type d -printf ":%p" )
+export PATH=$PATH:$PATH$( find $HOME/.script/ -type d -printf ":%p" )
+export EDITOR="nvim"
+export VISUAL="nvim"
+export BROWSER="chromium"
+export terminal="st"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -209,19 +224,6 @@ alias full="sudo tlp fullcharge"
 alias cal="cal 2022"
 alias cam="ffplay /dev/video0"
 alias rn="sudo systemctl restart NetworkManager"
-export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
-export PATH=$PATH:/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin
-export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
-export PATH=$PATH:$HOME/.local/bin/image
-export PATH=$PATH:$HOME/.script/sfcode
-export PATH=$PATH:$HOME/.script/database
-export PATH=$PATH:$HOME/.script/otomation
-
-#export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
-export EDITOR="nvim"
-export VISUAL="nvim"
-export BROWSER="chromium"
-export terminal="st"
 
 #if [[ "$(tty)" = "/dev/tty1" ]]; then
 #	pgrep dwm || startx

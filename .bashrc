@@ -84,7 +84,7 @@ alias cal="cal 2022"
 alias cam="ffplay /dev/video0"
 alias rn="sudo systemctl restart NetworkManager"
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/custom:$HOME/.local/bin/statusbar:$HOME/.local/bin/tes
 export PATH=$PATH:$HOME/.local/bin/image
 #export PATH=$PATH$( find $HOME/.script/ -type d -printf ":%p" )
 export PATH=$PATH:$HOME/.script/sfcode
