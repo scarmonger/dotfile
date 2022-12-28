@@ -456,9 +456,32 @@ run command : hp-setup ,for auto detect device
 
 # Password manager
 Install : sudo pacman -S pass pass-otp
+
 ## Create gpg first
+https://www.youtube.com/watch?v=1vVIpIvboSg
+
 gpg --full-gen-key
+gpg --list-keys 
+> check key exists or not
+
+gpg --edit-key psikomania@yahoo.com
+
+gpg> list : cek key 
+gpg> key 0 : select key 0 (primary key)
+gpg> key 1 : select key 1 (subkey)
+gpg> expire : rubah exp date
+gpg> save : jgn lupa save agar bs ter-apply
+
+gpg --passwd psikomania@yahoo.com : change password/passphrase
+gpg --import [filename of revocation file]
+
 gpg -k : cek public key etc
+
+## Backup GPG
+Backup the wholefolder of ~/.gnupg and zip it. Store it in somewhere safe
+
+## Exporting Public Key
+gpg --export --armor --output psikomania@yahoo.gpg.pub psikomania@yahoo.com
 
 Pass init a@b.c
 Passmenu - run through dmenu
