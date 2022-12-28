@@ -268,6 +268,7 @@ gvim
 > map <C-v> "+P
 
 > vnoremap <C-c> "*y : let @+=@*<CR>
+"
 
 ## change /etc/sudoers 
 in order to not always prompted for password. Setting is for input password only once on the same terminal session
@@ -501,3 +502,8 @@ https://github.com/sdaschner/dotfiles/blob/master/.aliases
 https://github.com/ohmyzsh/ohmyzsh
 https://www.thorsten-hans.com/5-types-of-zsh-aliases
 https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95
+
+# Error package corrupted
+File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Solution:
+sudo pacman -Sy archlinux-keyring
