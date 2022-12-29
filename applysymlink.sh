@@ -530,3 +530,17 @@ https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95
 File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
 Solution:
 sudo pacman -Sy archlinux-keyring
+
+# Neomutt
+https://github.com/LukeSmithxyz/mutt-wizard
+
+## Pattern
+https://neomutt.org/guide/advancedusage
+
+set folder = "/home/mc/.local/share/mail/marctinius@gmail.com"
+set header_cache = /home/mc/.cache/mutt-wizard/marctinius@gmail.com/headers
+set message_cachedir = /home/mc/.cache/mutt-wizard/marctinius@gmail.com/bodies
+source /usr/share/mutt-wizard/switch.muttrc
+
+/etc/mailcap
+/etc/mime.types
