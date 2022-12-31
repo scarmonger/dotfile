@@ -20,8 +20,13 @@
 let mapleader = " "
 let maplocalleader = "\\"
 
+" Change semicolon to colon and viceversa
 nnoremap ; :
 nnoremap : ;
+
+" Add enter functionality to add new row
+nnoremap <CR> m`o<Esc>``
+
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -104,6 +109,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr><esc>
 nnoremap <leader>fH <cmd>Telescope help_tags<cr>
 nnoremap <leader>fc <cmd>Telescope command_history<cr><esc>
 nnoremap <leader>fo <cmd>lua require('telescope.builtin').oldfiles()<cr>
+
 
 "nnoremap <Leader>ff :lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>
 

@@ -63,7 +63,7 @@ ln -ivs ~/github/dotfile/.config/shell ~/.config/
 # local bin file
 ln -ivs ~/github/dotfile/.local/bin/statusbar ~/.local/bin
 ln -ivs ~/github/dotfile/.local/bin/custom ~/.local/bin
-
+ln -ivs ~/github/dotfile/.config/moc/config ~/.moc/
 # home folder
 # ln -s ~/github/dotfile/.gnupg/ ~/.gnupg
 # ln -s ~/github/dotfile/.password-store/ ~/.password-store
