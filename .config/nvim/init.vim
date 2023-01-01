@@ -64,6 +64,7 @@ else
 	nnoremap <leader>ex :e ~/.xinitrc<cr>
 	nnoremap <leader>ez :e ~/.zshrc<cr>
 	nnoremap <leader>er :e ~/.config/ranger/rc.conf<cr>
+	nnoremap <leader>ea :e ~/github/dotfile/.aliases<cr>
 	nnoremap <leader>eb :e ~/.bashrc<cr>
 	nnoremap <leader>ep :e ~/.config/picom/picom.conf<cr>
 	nnoremap <leader>eq :e ~/.config/qutebrowser/config.py<cr>

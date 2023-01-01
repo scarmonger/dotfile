@@ -3,8 +3,17 @@
 # Configuration file
 alias cfh="cd /etc;sudo nvim hosts"
 alias cfhr="cd /etc;sudo nvim hosts && ranger /etc"
-alias cfa="cd ~/github/dotfile;v applysymlink.sh"
-alias cfar="cd ~/github/dotfile;v applysymlink.sh && ranger ~/github/dotfile"
+alias cfnr="cd ~/github/dotfile; nvim applysymlink.sh && ranger ~/github/dotfile"
+alias cfn="cd ~/github/dotfile; nvim applysymlink.sh"
+alias cfa="cd ~/github/dotfile; nvim .aliases"
+
+alias cfw="cd ~/github/suckless/dwm && nvim config.def.h"
+alias cfm="cd ~/github/suckless/dmenu && nvim config.def.h"
+alias cfs="cd ~/github/suckless/st && nvim config.def.h"
+alias cfb="cd ~/github/suckless/blocks; nvim config.h"
+alias cfx="cd ~/; nvim .xinitrc"
+alias cfz="cd ~/; nvim .zshrc"
+alias cfr="cd ~/.config/ranger/; nvim rc.conf"
 
 # Git
 
