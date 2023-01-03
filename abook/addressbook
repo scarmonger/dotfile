@@ -1,0 +1,487 @@
+# abook addressbook file
+
+[format]
+program=abook
+version=0.6.1
+
+
+[0]
+name=Yanti
+email=yanti@dataon.com
+
+[1]
+name=Asri Damajanti
+email=asri.damajanti@yupindo.com
+
+[2]
+name=Chandra
+email=chandra.hrd@yupindo.com
+
+[3]
+name=Mengsi JP
+email=mengsi.jp@yupindo.com
+
+[4]
+name=Muadz
+email=mohamad.muadz@dataon.com
+
+[5]
+name=Winarti, Santika Christina (Ade)
+email=christina.santika.cs@hitachi-kenki.com
+
+[6]
+name=Fauzan Lukman
+email=fauzan.lukman@yupindo.com
+
+[7]
+name=Herawati Tarigan
+email=herawati.tarigan@yupindo.com
+
+[8]
+name=Sugito
+email=sugito.mulyono@yupindo.com
+
+[9]
+name=viector.it
+email=viector.it@yupindo.com
+
+[10]
+name=Mulyati
+email=mulyati.hrd@yupindo.com
+
+[11]
+name=Hari Kristiono
+email=hari.kristiono@yupindo.com
+
+[12]
+name=Nugroho Harjono
+email=nugroho.harjono@yupindo.com
+
+[13]
+name=Guntur Subagio
+email=guntur.subagio@yupindo.com
+
+[14]
+name=Muhammad Fakhran
+email=muhammad.fakhran@yupindo.com
+
+[15]
+name=purchasing spare part yupi
+email=purchasing.sp@yupindo.com
+
+[16]
+name=Arimbo Budiarso
+email=arimbo.budiarso@yupindo.com
+
+[17]
+name=saptomo.yuni@mt-pharma-id.com
+email=saptomo.yuni@mt-pharma-id.com
+
+[18]
+name=yuliana.triningsih@mt-pharma-id.com
+email=yuliana.triningsih@mt-pharma-id.com
+
+[19]
+name=ratuwata.alistiqomah@mt-pharma-id.com
+email=ratuwata.alistiqomah@mt-pharma-id.com
+
+[20]
+name=suprianto@mt-pharma-id.com
+email=suprianto@mt-pharma-id.com
+
+[21]
+name=iman.firmansyah@mt-pharma-id.com
+email=iman.firmansyah@mt-pharma-id.com
+
+[22]
+name=ahmad@mt-pharma-id.com
+email=ahmad@mt-pharma-id.com
+
+[23]
+name=dini.widia@mt-pharma-id.com
+email=dini.widia@mt-pharma-id.com
+
+[24]
+name=menik.anindiati@mt-pharma-id.com
+email=menik.anindiati@mt-pharma-id.com
+
+[25]
+name=Eza (HCMI)
+email=s.aef.ez@hitachi-kenki.com
+
+[26]
+name=May (HCMI)
+email=h.may.ps@hitachi-kenki.com
+
+[27]
+name=Rizka (HCMI)
+email=f.rizka.oh@hitachi-kenki.com
+
+[28]
+name=Andini Tri (HCMI)
+email=tri.andini.ta@hitachi-kenki.com
+
+[29]
+name=Sjahrul (HCMI)
+email=sjahrul.haitami.gd@hitachi-kenki.com
+
+[30]
+name=Yuliana
+email=yulia.yl@hitachi-kenki.com
+
+[31]
+name=DELIMA SIAGIAN
+email=delima@id.evergreen-logistics.com
+
+[32]
+name=MARYANI SURYA
+email=maryani@id.evergreen-logistics.com
+
+[33]
+name=MELFI SITOMPUL
+email=melfi@id.evergreen-logistics.com
+
+[34]
+name=Sajili Hasan (HCMI)
+email=hasan.sajili.ks@hitachi-kenki.com
+
+[35]
+name=Kustianto Bayu (HCMI)
+email=bayu.kustianto.nn@hitachi-kenki.com
+
+[36]
+name=Wahyudin Wahid (HCMI)
+email=wahid.wahyudin.wh@hitachi-kenki.com
+
+[37]
+name=Andrey Tjahjana
+email=andrey@dataon.com
+
+[38]
+name=Gordon James Enns DataOn
+email=genns@dataon.com
+
+[39]
+name=Adi Candra
+email=candra.adi@gmail.com
+
+[40]
+name=Ida Yuliati
+email=ida.yuliati@dataon.com
+
+[41]
+name=Albertus Radityo Hadi
+email=albertus@dataon.com
+
+[42]
+name=Abdi Wirawan
+email=abdi@dataon.com
+
+[43]
+name=Alfin Widantoro
+email=alfin.widantoro@dataon.com
+
+[44]
+name=Asrie Pratiwi
+email=asrie.pratiwi@dataon.com
+
+[45]
+name=Frenky Pranata
+email=pranata@dataon.com
+
+[46]
+name=Hendra
+email=hendra.praja@dataon.com
+
+[47]
+name=Iman Himawan Afianto
+email=iman.afianto@dataon.com
+
+[48]
+name=Marci DataOn
+email=marci@dataon.com
+
+[49]
+name=Marctinius
+email=marctinius@dataon.com
+
+[50]
+name=Saut M. Napitupulu
+email=saut.napitupulu@dataon.com
+
+[51]
+name=Windy
+email=windy@dataon.com
+
+[52]
+name=Gordon Enns
+email=genns@dataon.com
+
+[53]
+name=Mona
+email=mona@dataon.com
+
+[54]
+name=Yus Wadi
+email=yuswadi@dataon.com
+
+[55]
+name=Yanti
+email=yanti@dataon.com
+
+[56]
+name=Michael Andinata
+email=michael.andinata@dataon.com
+
+[57]
+name=Poppy T. Sitanggang
+email=poppy.sitanggang@dataon.com
+
+[58]
+name=Jajuli
+email=jajuli@dataon.com
+
+[59]
+name=Handiyanto
+email=handiyanto@dataon.com
+
+[60]
+name=Teguh Widodo
+email=teguh@dataon.com
+
+[61]
+name=Lusiana
+email=lusiana@dataon.com
+
+[62]
+name=Julian GM Alimin
+email=alimin@dataon.com
+
+[63]
+name=Seruni
+email=seruni@dataon.com
+
+[64]
+name=Rika Retno Wulandari
+email=rika.retno@dataon.com
+
+[65]
+name=Clarinta
+email=clarinta.fitricia@dataon.com
+
+[66]
+name=Wahyu Setiawan
+email=wahyu.setiawan@dataon.com
+
+[67]
+name=Angelina
+email=angelina@dataon.com
+
+[68]
+name=Dini
+email=dini.imawati@dataon.com
+
+[69]
+name=Chairunnisa
+email=chairunnisa@dataon.com
+
+[70]
+name=Achmad Najib
+email=achmad.najib@dataon.com
+
+[71]
+name=Juanda
+email=juanda@dataon.com
+
+[72]
+name=Ruth Ayuningtyas
+email=ruth.ayuningtyas@dataon.com
+
+[73]
+name=Yuwita Hermin
+email=yuwita@dataon.com
+
+[74]
+name=Irsyara Tahiira Zam Zam
+email=irsyara@dataon.com
+
+[75]
+name=Marrio
+email=marrio@dataon.com
+
+[76]
+name=Diana
+email=diana@dataon.com
+
+[77]
+name=Cahyo Nugroho
+email=cahyo@dataon.com
+
+[78]
+name=Ruth Anggreany
+email=ruth.anggreany@dataon.com
+
+[79]
+name=Eva Valentina
+email=eva@dataon.com
+
+[80]
+name=Maghdalena Septhy Prihatiningsih
+email=maghdalena@dataon.com
+
+[81]
+name=Ronald Mustika Putra
+email=ronald.mustika@dataon.com
+
+[82]
+name=Muhammad Ikhsan
+email=m.ikhsan@dataon.com
+
+[83]
+name=Azis Fadilah
+email=azis.fadilah@dataon.com
+
+[84]
+name=dba@dataon.com
+email=dba@dataon.com
+
+[85]
+name=Enrico
+email=enrico@dataon.com
+
+[86]
+name=Bambang
+email=bambang.parikenan@dataon.com
+
+[87]
+name=Linda
+email=linda.setia@dataon.com
+
+[88]
+name=Ignatius Elvri
+email=ignatius@dataon.com
+
+[89]
+name=Dwi Afrillia
+email=dwi@dataon.com
+
+[90]
+name=Muhammad Zakky Oswaldi
+email=zakky@dataon.com
+
+[91]
+name=Andhina Wisnu Patriana
+email=andhina@dataon.com
+
+[92]
+name=Tiono
+email=tiono@dataon.com
+
+[93]
+name=Anastasya Carlita
+email=anastasya@dataon.com
+
+[94]
+name=Andry
+email=andry@dataon.com
+
+[95]
+name=Oetomo
+email=mahyuddin.oetomo@dataon.com
+
+[96]
+name=Febriyant Abidin
+email=febriyant.abidin@dataon.com
+
+[97]
+name=Novita
+email=novita@dataon.com
+
+[98]
+name=M. Dani Gandadi
+email=mdani.gandadi@dataon.com
+
+[99]
+name=Albert Kasim
+email=albertk@dataon.com
+
+[100]
+name=Regizla Ornella Huwae
+email=regizla@dataon.com
+
+[101]
+name=Rafi Riadhi
+email=rafi.riadhi@dataon.com
+
+[102]
+name=Dega Utama
+email=dega.utama@dataon.com
+
+[103]
+name=Ridwan Satriya
+email=ridwan.satriya@dataon.com
+
+[104]
+name=Arief Satria
+email=arief.satria@dataon.com
+
+[105]
+name=itsupport
+email=itsupport@dataon.com
+
+[106]
+name=Siti Sarah Balgis
+email=siti.balgis@dataon.com
+
+[107]
+name=Karina Indrawati
+email=karina.indrawati@dataon.com
+
+[108]
+name=Ferdian Rizki
+email=ferdian.rizki@dataon.com
+
+[109]
+name=Jimmy Halim
+email=jimmy.halim@dataon.com
+
+[110]
+name=Mairizal Mulyadi. Muzir
+email=mairizal@dataon.com
+
+[111]
+name=Awalludin
+email=awalludin@dataon.com
+
+[112]
+name=Akmal Redha
+email=akmal.redha@dataon.com
+
+[113]
+name=Yusup Freddi
+email=yusup.freddi@dataon.com
+
+[114]
+name=Ranny Dwi Handayani
+email=ranny.handayani@dataon.com
+
+[115]
+name=Dhanu
+email=tri.ramadhanu@dataon.com
+
+[116]
+name=Adhitya Pratama
+email=adhitya.pratama@dataon.com
+
+[117]
+name=Adi Ariyanto Sani
+email=adi.ariyanto@dataon.com
+
+[118]
+name=dede
+email=dede@dataon.com
+
+[119]
+name=Cipta
+email=cipta.riswana@dataon.com
+

@@ -1,0 +1,24 @@
+account marctinius@dataon.com
+host mail.dataon.com
+port 587
+from marctinius@dataon.com
+user marctinius@dataon.com
+passwordeval "pass marctinius@dataon.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/mc/.config/msmtp/msmtp.log
+tls_starttls on
+
+account marctinius@gmail.com
+host smtp.gmail.com
+port 587
+from marctinius@gmail.com
+user marctinius@gmail.com
+passwordeval "pass marctinius@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/mc/.config/msmtp/msmtp.log
+# tls_starttls
+

@@ -1,4 +1,4 @@
-#/bin/bash
+#/home/mc/github/dotfile/.config/bin/bash
 # create symlink
 # example : ln -ivs source_file/folder target_folder
 mkdir -p ~/.script
@@ -51,8 +51,9 @@ ln -ivs ~/github/dotfile/.config/nvim ~/.config/
 rm -Rf ~/.config/ranger
 ln -ivs ~/github/dotfile/.config/ranger ~/.config/
 
-rm -Rf ~/.config/fish
-ln -ivs ~/github/dotfile/.config/fish ~/.config/
+ln -ivs ~/github/dotfile/abook ~/.abook/
+ln -ivs ~/github/dotfile/.config/msmtp/config ~/.config/msmtp/
+ln -ivs ~/github/dotfile/.config/mutt/muttrc ~/.config/mutt/
 
 ln -ivs ~/github/dotfile/.config/picom.conf ~/.config/
 cp -iv ~/github/dotfile/.config/ksnip/ksnip.conf ~/.config/ksnip/ksnip.conf
@@ -66,7 +67,7 @@ ln -ivs ~/github/dotfile/.local/bin/custom ~/.local/bin
 ln -ivs ~/github/dotfile/.config/moc/config ~/.moc/
 # home folder
 # ln -s ~/github/dotfile/.gnupg/ ~/.gnupg
-# ln -s ~/github/dotfile/.password-store/ ~/.password-store
+ln -s ~/github/dotfile/.password-store/ ~/.password-store
 
 su
 cat /home/mc/github/dotfile/etc_hosts >> /etc/hosts
@@ -135,6 +136,8 @@ sudo pacman -S imagemagick
 sudo pacman -S python python-pip
 pip install selenium
 pip install pyperclip
+
+## requirement for ultisnips
 python -m pip install --user --upgrade pynvim
 
 # GitHub authentication
@@ -458,30 +461,7 @@ run command : hp-setup ,for auto detect device
 Install : sudo pacman -S pass pass-otp
 
 ## Create gpg first
-https://www.youtube.com/watch?v=1vVIpIvboSg
 
-gpg --full-gen-key
-gpg --list-keys 
-> check key exists or not
-
-gpg --edit-key psikomania@yahoo.com
-
-gpg> list : cek key 
-gpg> key 0 : select key 0 (primary key)
-gpg> key 1 : select key 1 (subkey)
-gpg> expire : rubah exp date
-gpg> save : jgn lupa save agar bs ter-apply
-
-gpg --passwd psikomania@yahoo.com : change password/passphrase
-gpg --import [filename of revocation file]
-
-gpg -k : cek public key etc
-
-## Backup GPG
-Backup the wholefolder of ~/.gnupg and zip it. Store it in somewhere safe
-
-## Exporting Public Key
-gpg --export --armor --output psikomania@yahoo.gpg.pub psikomania@yahoo.com
 
 Pass init a@b.c
 Passmenu - run through dmenu
@@ -489,7 +469,8 @@ Pass add email - add new password
 Pass email - open saved password
 Pam gnu pg - to automatic login to gpg password
 zbarimg -q file.img - prog to know content of qr code
-
+pass ls/show : to show saved password
+passmenu --type : automatically type the password
 # network applet
 nm-connection-editor 
 

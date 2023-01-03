@@ -391,7 +391,8 @@ endif
 " 5-SNIPPETS:
 "
 " Read an empty HTML template and move cursor to title
-nnoremap ,html :read $HOME/.config/nvim/.skeleton.html<CR>3jwf>a
+nnoremap ,html :read $HOME/.config/nvim/snipfile/.skeleton.html<CR>3jwf>a
+nnoremap ,sig :read $HOME/.config/nvim/snipfile/.signature<CR>
 " nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
 
 " 6-COMMAND

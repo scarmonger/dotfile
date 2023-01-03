@@ -32,7 +32,7 @@ export PATH=$PATH:$HOME/.local/bin/image
 export PATH=$PATH:$PATH$( find $HOME/.script/ -type d -printf ":%p" )
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER="chromium"
+export BROWSER="qutebrowser"
 export terminal="st"
 
 # Path to your oh-my-zsh installation.
