@@ -14,6 +14,9 @@ ln -ivs ~/github/dotfile/.xinitrc ~/.xinitrc
 # ln -ivs ~/github/dotfile/.bashrc ~/.bashrc
 # ln -ivs ~/github/dotfile/.bash_aliases ~/.bash_aliases
 
+ln -ivs ~/github/dotfile/etc/smb.conf /etc/samba
+
+
 # Download file .AppImage for ksnip and obsidian
 https://github.com/ksnip/ksnip/releases
 https://obsidian.md/
@@ -77,10 +80,6 @@ ln -s ~/github/dotfile/.zprofile ~/.zprofile
 ln -s ~/github/dotfile/.oh-my-zsh/custom/autocomplete.zsh ~/.oh-my-zsh/custom/autocomplete.zsh
 ln -s ~/github/dotfile/.oh-my-zsh/custom/shortcuts.zsh ~/.oh-my-zsh/custom/shortcuts.zsh
 ln -s ~/github/dotfile/.config/mimeapps.list ~/.config/mimeapps.list
-
-
-# Usefull Command:
-xprop, xev, neofetch, printenv, xdotool, wmctrl
 
 ## Project Libre in dwm
 https://bbs.archlinux.org/viewtopic.php?id=251721
@@ -458,21 +457,8 @@ sudo pacman -S hplip
 run command : hp-setup ,for auto detect device
 
 # Password manager
-Install : sudo pacman -S pass pass-otp
+Install : sudo pacman -S pass pass-otp passmenu
 
-## Create gpg first
-
-
-Pass init a@b.c
-Passmenu - run through dmenu
-Pass add email - add new password
-Pass email - open saved password
-Pam gnu pg - to automatic login to gpg password
-zbarimg -q file.img - prog to know content of qr code
-pass ls/show : to show saved password
-passmenu --type : automatically type the password
-# network applet
-nm-connection-editor 
 
 # Setting default apps
 $ xdg-mime query filetype photo.jpeg
@@ -488,40 +474,5 @@ $ xdg-mime default feh.desktop image/jpeg
 Example:
 xdg-mime default wps-office-et.desktop text/html
 
-# Check keyboard or mouse wireless
-upower --dump
 
 
-# zsh
-https://github.com/wting/autojump/blob/master/docs/install.md
-git clone https://github.com/wting/autojump.git
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-
-https://christitus.com/zsh/
-https://zsh.sourceforge.io/Guide/zshguide.html
-https://wiki.archlinux.org/title/zsh
-https://github.com/ChrisTitusTech/zsh/blob/master/aliasrc
-https://github.com/sdaschner/dotfiles/blob/master/.aliases
-https://github.com/ohmyzsh/ohmyzsh
-https://www.thorsten-hans.com/5-types-of-zsh-aliases
-https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95
-
-# Error package corrupted
-File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
-Solution:
-sudo pacman -Sy archlinux-keyring
-
-# Neomutt
-https://github.com/LukeSmithxyz/mutt-wizard
-
-## Pattern
-https://neomutt.org/guide/advancedusage
-
-set folder = "/home/mc/.local/share/mail/marctinius@gmail.com"
-set header_cache = /home/mc/.cache/mutt-wizard/marctinius@gmail.com/headers
-set message_cachedir = /home/mc/.cache/mutt-wizard/marctinius@gmail.com/bodies
-source /usr/share/mutt-wizard/switch.muttrc
-
-/etc/mailcap
-/etc/mime.types
