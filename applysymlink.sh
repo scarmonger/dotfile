@@ -57,6 +57,7 @@ ln -ivs ~/github/dotfile/.config/ranger ~/.config/
 ln -ivs ~/github/dotfile/abook ~/.abook/
 ln -ivs ~/github/dotfile/.config/msmtp/config ~/.config/msmtp/
 ln -ivs ~/github/dotfile/.config/mutt/muttrc ~/.config/mutt/
+ln -ivs ~/github/dotfile/.config/zathura ~/.config/
 
 ln -ivs ~/github/dotfile/.config/picom.conf ~/.config/
 cp -iv ~/github/dotfile/.config/ksnip/ksnip.conf ~/.config/ksnip/ksnip.conf
