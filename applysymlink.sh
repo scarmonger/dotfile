@@ -206,8 +206,6 @@ brightnessctl set 50%-
 brightnessctl set +10%
 	Adds 10% of the maximum to the current brightness.
 
-## To turn off screen 
-xset dpms force off
 
 # Enable tap on touchpad permanently
 Reference : https://wiki.archlinux.org/index.php/Libinput
@@ -242,19 +240,12 @@ git clone displaylink
 systemctl enable displaylink.service
 sudo mousepad /usr/share/X11/xorg.conf.d/20-evdidevice.conf
 
-# Network Setting
-nm-connection-editor 
-
 w3m - ranger image display
 sshfs - filezilla replacement
 ncdu - treesize
 alsa-utils - sound
 > execute : alsamixer
-flameshot - screenshot
-kitty - terminal
-feh - image viewer
-ranger - file explorer
-mpv - video player
+
 xorg-xinput
 > to configure input on runtime
 > xinput list 
@@ -263,15 +254,7 @@ xorg-xinput
 >> check lists of properties on a device 
 > xinput set-prop [deviceid] [propid] 1
 >> xinput set-prop 16 331 1
-gvim
-> to enable clipboard Ctrl + c or Ctrl + v
-> create file ~/.vimrc
-> input these line of code:
-> vnoremap <C-c> "+y
-> map <C-v> "+P
 
-> vnoremap <C-c> "*y : let @+=@*<CR>
-"
 
 ## change /etc/sudoers 
 in order to not always prompted for password. Setting is for input password only once on the same terminal session
@@ -324,69 +307,6 @@ tlp-stat
 ## Restart Network
 sudo systemctl restart NetworkManager
 sudo systemctl status NetworkManager
-
-## How to know WM_Class of a Window:
-Open any application you desired, and then open a terminal side by side and type **xprop** and hit enter
-```
-xprop
-```
-the mouse cursor is now changed to a pointer. Point that cursor on the application that you want to target.
-The terminal now show you the window properties
-```
-_NET_WM_BYPASS_COMPOSITOR(CARDINAL) = 2
-_NET_WM_SYNC_REQUEST_COUNTER(CARDINAL) = 33554434, 33554435
-_GTK_THEME_VARIANT(UTF8_STRING) = "dark"
-WM_WINDOW_ROLE(STRING) = "browser"
-WM_CLASS(STRING) = "google-chrome", "Google-chrome"
-_NET_WM_WINDOW_TYPE(ATOM) = _NET_WM_WINDOW_TYPE_NORMAL
-_NET_WM_PID(CARDINAL) = 1704
-WM_LOCALE_NAME(STRING) = "en_US.UTF-8"
-WM_CLIENT_MACHINE(STRING) = "asus-i3"
-WM_PROTOCOLS(ATOM): protocols  WM_DELETE_WINDOW, _NET_WM_PING, _NET_WM_SYNC_REQUEST
-```
-Check for the second parameter of this line which is **Google-chrome**
-WM_CLASS(STRING) = "google-chrome", "Google-chrome"
-
-
-# Check packages installed on arch linux
-
-Check all packages installed on arch linux
-`pacman -Qe`
-
-Check a package version installed on arch linux
-`pacman -Q packagename` 
-example: `pacman -Q ranger`
-
-# Connect to WiFi
-`nmtui`
-
-# Scan for viruses
-clamscan --recursive --infected --exclude-dir='^/sys|^/dev' / --move=/home/marc/Infectedfile/ --max-filesize=4000M --max-scansize=4000M -l /home/marc/ClamAV_scan_result.txt
-
-clamscan --recursive --infected /home --move=/home/marc/Infectedfile/ -l /home/marc/ClamAV_scan_result_home.txt
-
-clamscan --recursive /home --move=/home/marc/Infectedfile/ -l /home/marc/ClamAV_scan_result_home.txt
-
-clamscan --recursive /home/marc/Documents/ --exclude-dir='^/home/marc/Documents/mail.dataon.com|^/home/marc/Documents/VirtualBox' --move=/home/marc/Infectedfile/ > /home/marc/scan_result.txt
-
-# Update AV Database
-sudo freshclam
-
-# Mount NTFS file system
-mount -t ntfs3 /dev/sdxY /mnt
-
-You can enable some mount(8) options to improve the performance:
-
-noatime – can speed up the file system operations.
-prealloc – decreases fragmentation in case of parallel write operations (most useful for HDD).
-
-# Set volume with amixer
-amixer set Master toggle
-amixer set Master 5%-
-amixer set Master 5%+
-
-trash-list (show trashed item)
-trash-restore (from within the folder deleted)
 
 # Installing HP Printer
 Install cups, make sure the service is running
