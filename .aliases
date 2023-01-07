@@ -18,7 +18,7 @@ alias cfr="cd ~/.config/ranger/; nvim rc.conf"
 # Git
 
 alias gs="git status"
-alias ga="git add ."
+alias ga="git addon ."
 alias gb="git branch"
 alias gbd="git branch -d" # delete branch
 alias gc="git clone"
