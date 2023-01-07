@@ -388,70 +388,6 @@ amixer set Master 5%+
 trash-list (show trashed item)
 trash-restore (from within the folder deleted)
 
-# Set up default browser and editor
-try edit the browser entry in
-/home/$USER/.profile
-
-then find and replace all Pale Moon entries in
-/home/$USER/.config/mimeapps.list
-
-####################################
-### /home/$USER/.profile ###
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export EDITOR=/usr/bin/code
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-# fix "xdg-open fork-bomb" export your preferred browser from here
-export BROWSER=/usr/bin/google-chrome-stable
-####################################
-
-
-### /home/$USER/.config/mimeapps.list ###
-#########################################
-
-[Default Applications]
-x-scheme-handler/http=userapp-google-chrome-stable.desktop
-x-scheme-handler/https=userapp-google-chrome-stable.desktop
-x-scheme-handler/ftp=userapp-google-chrome-stable.desktop
-x-scheme-handler/chrome=userapp-google-chrome-stable.desktop
-text/html=userapp-google-chrome-stable.desktop
-application/x-extension-htm=userapp-google-chrome-stable.desktop
-application/x-extension-html=userapp-google-chrome-stable.desktop
-application/x-extension-shtml=userapp-google-chrome-stable.desktop
-application/xhtml+xml=userapp-google-chrome-stable.desktop
-application/x-extension-xhtml=userapp-google-chrome-stable.desktop
-application/x-extension-xht=userapp-google-chrome-stable.desktop
-image/jpeg=viewnior.desktop;gpicview.desktop;
-image/png=viewnior.desktop;gpicview.desktop;
-text/plain=mousepad.desktop
-x-scheme-handler/mailto=userapp-Thunderbird.desktop
-message/rfc822=userapp-Thunderbird.desktop
-application/pdf=epdfview.desktop
-application/x-bittorrent=deluge.desktop
-x-scheme-handler/postman=Postman.desktop
-
-[Added Associations]
-x-scheme-handler/http=exo-web-browser.desktop;
-x-scheme-handler/https=exo-web-browser.desktop;
-image/jpeg=viewnior.desktop;gpicview.desktop;
-image/png=viewnior.desktop;gpicview.desktop;
-text/plain=mousepad.desktop;
-x-scheme-handler/mailto=userapp-Thunderbird.desktop;
-message/rfc822=userapp-Thunderbird.desktop;
-application/pdf=epdfview.desktop;
-application/x-bittorrent=deluge.desktop;
-#########################################
-
-# VPN-PPTP
-sudo pacman -S networkmanager-pptp
-
-Syntax for create VPN DataOn see keepass
-sudo pon <TUNNEL> debug dump logfd 2 nodetach
-sudo pon dataon debug dump logfd 2 nodetach
-sudo pon dataon
-
-https://wiki.archlinux.org/title/PPTP_server
-http://pptpclient.sourceforge.net/routing.phtml#client-to-server
-
 # Installing HP Printer
 Install cups, make sure the service is running
 sudo pacman -S hplip
@@ -459,21 +395,5 @@ run command : hp-setup ,for auto detect device
 
 # Password manager
 Install : sudo pacman -S pass pass-otp passmenu
-
-
-# Setting default apps
-$ xdg-mime query filetype photo.jpeg
-image/jpeg
-Determine the default application for a MIME type:
-
-$ xdg-mime query default image/jpeg
-gimp.desktop
-Change the default application for a MIME type:
-
-$ xdg-mime default feh.desktop image/jpeg
-
-Example:
-xdg-mime default wps-office-et.desktop text/html
-
 
 
