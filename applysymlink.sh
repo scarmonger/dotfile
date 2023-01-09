@@ -440,16 +440,7 @@ application/pdf=epdfview.desktop;
 application/x-bittorrent=deluge.desktop;
 #########################################
 
-# VPN-PPTP
-sudo pacman -S networkmanager-pptp
 
-Syntax for create VPN DataOn see keepass
-sudo pon <TUNNEL> debug dump logfd 2 nodetach
-sudo pon dataon debug dump logfd 2 nodetach
-sudo pon dataon
-
-https://wiki.archlinux.org/title/PPTP_server
-http://pptpclient.sourceforge.net/routing.phtml#client-to-server
 
 # Installing HP Printer
 Install cups, make sure the service is running
@@ -458,21 +449,5 @@ run command : hp-setup ,for auto detect device
 
 # Password manager
 Install : sudo pacman -S pass pass-otp passmenu
-
-
-# Setting default apps
-$ xdg-mime query filetype photo.jpeg
-image/jpeg
-Determine the default application for a MIME type:
-
-$ xdg-mime query default image/jpeg
-gimp.desktop
-Change the default application for a MIME type:
-
-$ xdg-mime default feh.desktop image/jpeg
-
-Example:
-xdg-mime default wps-office-et.desktop text/html
-
 
 
